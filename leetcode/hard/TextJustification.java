@@ -17,7 +17,7 @@ public class TextJustification {
         	int space = 1, extra = 0;
         	if(w != i+1 && w != words.length) { //only one word or reached end  -  false
         		space = (maxWidth - len) / (w - i - 1)   + 1; 
-        		extra = (maxWidth - len) % (w - i - 1);
+        		extra = (maxWidth - len) % (w - i - 1); //imp.
         	}
         	
         	for(int j = i+1; j < w; j++) {
